@@ -45,3 +45,7 @@ Use the build script to generate production output.
 `src/pages/` holds the learning modules. `src/components/` groups examples by subject. `src/layout/` contains shared navigation and layout.
 
 This is a browser-based learning resource. The current app does not provide accounts, a grading backend, or saved course progress. For hosting, configure an SPA fallback to `index.html` so direct visits to lesson routes work.
+
+## License
+
+MIT.
