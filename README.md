@@ -1,34 +1,47 @@
-# WebFundamentals - Plateforme d'Apprentissage Web
+# WebFundamentals
 
-Une plateforme interactive pour apprendre les bases du développement web : HTML, CSS et HTTP.
+An interactive, French-language introduction to HTML, CSS, JavaScript, and HTTP.
 
-## Fonctionnalités
+[Open the demo](https://devweb-lilac.vercel.app) · [Browse the code](https://github.com/hamzaxbella/devweb)
 
-- **HTML (La Structure)** : Sémantique, Formulaires, Médias.
-- **CSS (Le Style)** : Box Model, Flexbox, Grid.
-- **HTTP (La Communication)** : Cycle Requête/Réponse, Méthodes, Codes de Statut.
+## Learn by changing things
 
-## Technologies
+- Explore semantic HTML, forms, media, and tables.
+- Visualize the box model, positioning, Flexbox, Grid, and typography.
+- Learn DOM events and the HTTP request/response cycle.
+- Edit HTML and CSS in the playground and see a debounced iframe preview.
 
-- React + Vite
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- React Router
+| Route | Content |
+| --- | --- |
+| `/html` | Structure and semantic elements |
+| `/css` | Layout and styling |
+| `/js` | DOM and events |
+| `/http` | Methods, responses, and status codes |
+| `/playground` | Live HTML/CSS editor |
 
-## Installation
+## Stack
 
-1. Cloner le dépôt
-2. Installer les dépendances :
-   ```bash
-   npm install
-   ```
-3. Lancer le serveur de développement :
-   ```bash
-   npm run dev
-   ```
+React · TypeScript · Vite · Tailwind CSS · React Router · Framer Motion
 
-## Licence
+## Run locally
 
-MIT
-# devweb
+```bash
+git clone https://github.com/hamzaxbella/devweb.git
+cd devweb
+npm ci
+npm run dev
+```
+
+Open <http://localhost:5173> (or the address printed in the terminal).
+
+```bash
+npm run build
+```
+
+Use the build script to generate production output.
+
+## Code map
+
+`src/pages/` holds the learning modules. `src/components/` groups examples by subject. `src/layout/` contains shared navigation and layout.
+
+This is a browser-based learning resource. The current app does not provide accounts, a grading backend, or saved course progress. For hosting, configure an SPA fallback to `index.html` so direct visits to lesson routes work.
